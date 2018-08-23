@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 describe Movie do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject { build :movie }
+
+  it { is_expected.to be_valid }
 end
